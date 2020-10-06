@@ -35,10 +35,12 @@ export default function App(){
       <main>
         {/* path: the path of the route. Here, we use / to define the path of the home page. */}
         {/* render: will display the content whenever the route is reached. Here, we'll render a welcome message to the user. */}
-    <Route path="/" render={() => {}} />
+    <Route path="/" render={() => {/*welcome page here */}} />
       </main>
     </Router>
   );
 }
+
+
 
 
