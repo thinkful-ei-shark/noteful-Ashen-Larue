@@ -1,26 +1,41 @@
 import React from 'react';
 import './App.css';
-import { Router } from "react-router-dom"
+import {BrowserRouter as Router, Route, Link } from "react-router-dom"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
+// function App() {
+//   return (
+//     <div className="App">
+//       <header className="App-header">
         
-      </header>
-    </div>
-  );
-}
+//       </header>
+//     </div>
+//   );
+// }
 
 export default function App(){
   return(
     <Router>
-      <main>
+      <header>
         <nav>
-          <ul>
-          </ul>
+          <div>
+            <ul>
+              <li>example 1</li>
+              <li>example 2</li>
+              <li>example 3</li>
+              <li>example 4</li>
+            {/*folder components will go here*/}
+            </ul>
+          </div>
         </nav>
-    <Route path="/" render={() => <h1>Noteful</h1>} />
+        <div>
+          <h1>Noteful {/*href that sets the webpage back to home*/}</h1>
+        </div>
+      </header>
+
+      <main>
+        {/* path: the path of the route. Here, we use / to define the path of the home page. */}
+        {/* render: will display the content whenever the route is reached. Here, we'll render a welcome message to the user. */}
+    <Route path="/" render={() => {}} />
       </main>
     </Router>
   );
